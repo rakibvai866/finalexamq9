@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUS-9</title>
+</head>
+<body>
+    <p>
+        Media queries are a feature in CSS that allow you to apply different styles based on various 
+        characteristics of the user's device or viewport. They are commonly used to create responsive 
+        web designs that adapt to different screen sizes and devices, such as desktops, tablets, 
+        and mobile phones.
+    </p>
+    <p>
+        With media queries, you can specify certain conditions under which a set of CSS rules should be 
+        applied. For example, you can target devices with a maximum screen width of 768 pixels and apply 
+        specific styles to optimize the layout for smaller screens.
+    </p>
+    <p>
+        Mobile First Approach: <br>
+        The Mobile First Approach is a design philosophy where you first design and develop the website for 
+        mobile devices, and then progressively enhance it for larger screens. This means you start with 
+        the most essential styles for mobile and then use media queries to add more complex styles as the 
+        screen size increases.
+    </p>
+    <p>Now, regarding the use of min-width or max-width in Mobile First Approach:</p>
+    <p>
+        * Mobile First Approach recommends using min-width: <br>
+        In the Mobile First Approach, you start with the smallest screen size (typically for mobile devices) 
+        and then use media queries with min-width to target larger screens and apply additional styles as the 
+        screen size grows. This ensures that your base styles are designed for mobile devices, and then you 
+        enhance the layout for larger screens. <br>
+        Example:
+    </p>
+    <img src="./image-1.png" alt="image">
+    <p>
+        In this example, the padding for the .container element is set to 10 pixels for mobile devices, and a 
+        media query is used with min-width: 768px to increase the padding to 20 pixels for larger screens.
+    </p>
+
+    <p>
+        *Use of max-width can lead to complications in Mobile First Approach: <br>
+         While you can technically use max-width in a Mobile First Approach, it might lead to more complex and 
+         less maintainable styles. If you use max-width to apply styles for smaller screens, you might find 
+         yourself overriding these styles with media queries later on, which could lead to redundant code. <br>
+         Example:
+    </p>
+    <img src="./image-2.png" alt="image">
+    <p>
+        In this example, the base styles are designed for desktop, and a media query with max-width: 767px is 
+        used to decrease the padding to 10 pixels for mobile devices. This approach could be more error-prone 
+        and harder to maintain as you add more complex styles for larger screens.
+    </p>
+    <p>
+        In summary, min-width is more helpful in the Mobile First Approach because it allows you to start with 
+        essential styles for mobile and then progressively enhance the layout for larger screens. This 
+        approach leads to more straightforward, efficient, and maintainable code as you apply additional 
+        styles using media queries for larger devices.
+    </p>
+
+</body>
+</html>
